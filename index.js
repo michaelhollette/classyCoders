@@ -1,4 +1,4 @@
-const { Employee } = require("./classes/Employee")
+const { Employee } = require("./classes/Employee.js")
 const { Manager } = require("./classes/Manager")
 const { SalesPerson } = require("./classes/SalesPerson")
 const { SoftwareEngineer } = require("./classes/SoftwareEngineer")
@@ -19,10 +19,9 @@ console.log(Employee.getTotalSalary()); // 310000
 
 const jenna = new Manager("Jenna", "Head of Engineers", 120000, "Software Engineering", 10);
 console.log(jenna.getEmployeesManaged()); // []
-const preston = new Employee("Preston", "Engineer", 100000);
+
 jenna.setEmployeesManaged(preston);
 console.log(jenna.getEmployeesManaged());
-
 
 
 const malik = new SalesPerson("Malik", "Enterprise Sale Associate", 90000, ["Vine", "MySpace", "Shutterfly"])

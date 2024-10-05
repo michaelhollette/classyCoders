@@ -44,20 +44,9 @@ class Employee {
         
 }
 
-const preston = new Employee("Preston", "Engineer", 100000);
-preston.setSalary(105000);
-console.log(preston.getSalary()); // 105000
-console.log(preston.getStatus()); // true;
-preston.setStatus("fire");
-console.log(preston.getStatus()); // false;
 
-
-
-console.log(Employee.getEmployees()); // [ Manager { }, SoftwareEngineer { }, SalesPerson { }]
-console.log(Employee.getTotalSalary()); // 310000
 module.exports = {
     Employee,
 }
 
 
-module.exports = Employee

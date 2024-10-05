@@ -87,6 +87,6 @@ describe("Employee Static Properties and Methods Tests", () => {
     })
 
     test("getTotalPayroll returns salary of all employees created", () => {
-        expect(Employees.getTotalPayroll()).toBe(515000)
+        expect(Employees.getTotalSalary()).toBe(515000)
     })
 })
