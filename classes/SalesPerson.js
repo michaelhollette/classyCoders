@@ -13,6 +13,14 @@ class SalesPerson extends Employee{
         this.#totalSales += amount
         
     }
+    findClient(client){
+        for (person of clients){
+            if (person == clients){
+                return client
+            }
+        }
+        throw new Error('Client not found')
+    }
    
 }
 

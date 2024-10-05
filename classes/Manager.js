@@ -1,4 +1,5 @@
 const Employee = require('./Employee.js')
+    
 class Manager extends Employee {
     #employeesManaged;
     constructor(name,position, salary, department){
@@ -14,7 +15,14 @@ class Manager extends Employee {
     setEmployeesManaged(employee){
         this.#employeesManaged.push(employee)
     }    
+    promote(newJobTitle, newSalary, newDepartment){
+        this.position = newJobTitle
+        this.setSalary(newSalary)
+        this.department = newDepartment
+
+    }
 }
+
 
 module.exports = {
     Manager,

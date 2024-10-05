@@ -40,13 +40,21 @@ class Employee {
         }
         return totalPayroll;
     }
+    promote(newJobTitle, newSalary){
+        this.position = newJobTitle
+        this.setSalary(newSalary)
+
+    }
 
         
 }
 
 
-module.exports = {
-    Employee,
-}
+const joe = new Employee('joe', 'graduate', 30000)
+joe.promote("senior engineer", 40000)
+console.log(joe.getSalary())
+console.log(joe)
 
+
+module.exports = Employee
 

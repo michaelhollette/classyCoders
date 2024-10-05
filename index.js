@@ -1,4 +1,4 @@
-const { Employee } = require("./classes/Employee.js")
+const { Employee } = require("./classes/Employee")
 const { Manager } = require("./classes/Manager")
 const { SalesPerson } = require("./classes/SalesPerson")
 const { SoftwareEngineer } = require("./classes/SoftwareEngineer")
@@ -34,6 +34,13 @@ const programmer = new SoftwareEngineer("Becca", "Senior Software Engineer", 100
 console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python"]
 programmer.setProgrammingLanguage("C#"); 
 console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python", "C#"]
+
+const david = new Employee('david', 'graduate', -5)
+
+const amy = new Manager('amy', 'CTO', 100000, 'tech')
+amy.promote('CEO', 150000, 'tech') 
+
+malik.findClient(Vine)
 
 
 module.exports = {
